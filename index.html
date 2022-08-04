@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Users</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+
+        body {
+            width: 100%;
+        }
+
+        /* #users {
+           
+            height: 100vh;
+        } */
+
+        h2 {
+            text-align: center;
+            margin-bottom: 15px;
+            font-size: 2rem;
+            margin-top: 1rem;
+
+        }
+
+        #users {
+            /* background-color: beige; */
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+        }
+
+        .user-info {
+            padding: 20px 0;
+            max-height: 600px;
+            background-color: aliceblue;
+        }
+
+        .user-info img {
+            width: 180px;
+            height: 180px;
+            margin: 0 auto;
+            display: block;
+            padding: 5px;
+            background-color: white;
+            border: 3px solid rgba(0, 0, 0, 0.25);
+            border-radius: 50%;
+            margin-bottom: 30px;
+        }
+
+        .user-info p {
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        .user-info h3 {
+            text-align: center;
+            font-size: 1.8rem;
+            font-weight: 500;
+        }
+
+        /* media query */
+        @media screen and (max-width: 540px) {
+            #users {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                gap: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Random Users</h2>
+    <div id="users">
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
